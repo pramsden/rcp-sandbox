@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: My-rcp-app
+Bundle-SymbolicName: my-rcp-app;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: my_rcp_app.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.apache.felix.scr,
+ org.eclipse.equinox.event,
+ xstream;bundle-version="1.4.20"
+Bundle-RequiredExecutionEnvironment: JavaSE-17
+Automatic-Module-Name: my.rcp.app
+Import-Package: javax.inject
+Bundle-ActivationPolicy: lazy

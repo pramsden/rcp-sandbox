@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pde version="3.8"?>
+<target name="rcp">
+	<locations>
+		<location includeDependencyDepth="infinite" includeDependencyScopes="compile,provided,runtime,test,system,import" includeSource="true" missingManifest="generate" type="Maven">
+
+			<feature id="xtream.feature" version="1.0.0.qualifier">
+
+   
+
+   
+
+   
+				<description url="http://www.example.com/description">
+      [Enter Feature Description here.]
+   </description>
+				<copyright url="http://www.example.com/copyright">
+      [Enter Copyright Description here.]
+   </copyright>
+				<license url="http://www.example.com/license">
+      [Enter License Description here.]
+   </license>
+			</feature>
+			<dependencies>
+				<dependency>
+					<groupId>com.thoughtworks.xstream</groupId>
+					<artifactId>xstream</artifactId>
+					<version>1.4.20</version>
+					<type>jar</type>
+				</dependency>
+			</dependencies>
+		</location>
+		<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+			<repository location="https://download.eclipse.org/releases/latest"/>
+			<unit id="org.eclipse.equinox.core.sdk.feature.group" version="3.23.600.v20221116-1440"/>
+			<unit id="org.eclipse.rcp.sdk.id" version="4.26.0.I20221123-1800"/>
+		</location>
+	</locations>
+</target>
